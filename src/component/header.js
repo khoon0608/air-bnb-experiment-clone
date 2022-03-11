@@ -1,14 +1,14 @@
 /** @format */
 
-function Navbar() {
+function Header() {
   return (
-    <div className='navbar'>
+    <header className='header'>
       <img
         src='https://cdn.worldvectorlogo.com/logos/airbnb.svg'
         alt='air-bnb-icon'
       />
-    </div>
+    </header>
   );
 }
 
-export default Navbar;
+export default Header;
