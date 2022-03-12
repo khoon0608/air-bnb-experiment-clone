@@ -1,0 +1,36 @@
+/** @format */
+
+.navbar {
+  padding-left: 30px;
+  width: 550px;
+  height: 385px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  img {
+    padding-top: 15px;
+    padding-right: 30px;
+
+    width: 395px;
+
+    align-self: center;
+  }
+
+  .navbar--text {
+    display: flex;
+    flex-direction: column;
+
+    .navbar--text--title {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .navbar--text--article {
+      font-size: 16px;
+      line-height: 20px;
+      opacity: 0.8;
+    }
+  }
+}
