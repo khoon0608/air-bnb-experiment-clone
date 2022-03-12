@@ -17,7 +17,7 @@ function Card({
   }
   return (
     <li className='card'>
-      <div className='badgeText'>{badgeText}</div>
+      {badgeText ? <div className='badgeText'>{badgeText}</div> : null}
       <img src={coverImg} alt='photo' />
       <div>
         <span style={{ color: "#FE395C" }}>★ </span> <span>{rating} </span>
