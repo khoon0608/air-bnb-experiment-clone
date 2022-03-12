@@ -2,15 +2,13 @@
 
 function Card({
   coverImg,
-  json: {
-    title,
-    stats: { rating, reviewCount },
-    location,
-    price,
-    openSpots,
-  },
+  title,
+  stats: { rating, reviewCount },
+  location,
+  price,
+  openSpots,
 }) {
-  let badgeText;
+  let badgeText = null;
   if (openSpots === 0) {
     badgeText = "SOLD OUT";
   } else if (location === "Online") {

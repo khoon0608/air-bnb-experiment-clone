@@ -9,7 +9,7 @@ function CardContainer() {
   const cards = data.map((json) => (
     <Card
       key={json.id}
-      json={json}
+      {...json}
       coverImg={pic}
     />
   ));
