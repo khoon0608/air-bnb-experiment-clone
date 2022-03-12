@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/air-bnb-experiment-clone/static/css/main.5790e6cf.css",
+    "main.js": "/air-bnb-experiment-clone/static/js/main.2f893ab5.js",
+    "static/media/photo-grid.png": "/air-bnb-experiment-clone/static/media/photo-grid.294d59b66b94e0e456cf.png",
+    "static/media/katie-zaferes.png": "/air-bnb-experiment-clone/static/media/katie-zaferes.8c39a93af3d2de2b3c27.png",
+    "index.html": "/air-bnb-experiment-clone/index.html",
+    "main.5790e6cf.css.map": "/air-bnb-experiment-clone/static/css/main.5790e6cf.css.map",
+    "main.2f893ab5.js.map": "/air-bnb-experiment-clone/static/js/main.2f893ab5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5790e6cf.css",
+    "static/js/main.2f893ab5.js"
+  ]
+}
