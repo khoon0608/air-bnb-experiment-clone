@@ -1,37 +1,24 @@
 /** @format */
 
-import photo from "../img/katie-zaferes.png";
+import pic from "../img/katie-zaferes.png";
 import Card from "./card";
 
+import data from "./data";
+
 function CardContainer() {
-  return (
-    <section className='cardContainer'>
-      <Card
-        photo={photo}
-        score='5.0'
-        reviewNum='6'
-        country='USA'
-        program='Life lessons with Katie zaferes'
-        cost='$136'
-      />
-      <Card
-        photo={photo}
-        score='5.0'
-        reviewNum='30'
-        country='USA'
-        program='Learn wedding photography'
-        cost='$125'
-      />
-      <Card
-        photo={photo}
-        score='4.8'
-        reviewNum='2'
-        country='USA'
-        program='Group Mountain Bikin'
-        cost='$50'
-      />
-    </section>
-  );
+  const cards = data.map(({ id, title, price, stats, location, openSpots }) => (
+    <Card
+      coverImg={pic}
+      key={id}
+      title={title}
+      price={price}
+      rating={stats.rating}
+      reviewCount={stats.reviewCount}
+      location={location}
+      openSpots={openSpots}
+    />
+  ));
+  return <ul className='cardContainer'>{cards}</ul>;
 }
 
 export default CardContainer;
