@@ -2,12 +2,13 @@
 
 function Card({
   coverImg,
-  rating,
-  reviewCount,
-  location,
-  title,
-  price,
-  openSpots,
+  json: {
+    title,
+    stats: { rating, reviewCount },
+    location,
+    price,
+    openSpots,
+  },
 }) {
   let badgeText;
   if (openSpots === 0) {
@@ -15,9 +16,14 @@ function Card({
   } else if (location === "Online") {
     badgeText = "ONLINE";
   }
+
   return (
     <li className='card'>
-      {badgeText ? <div className='badgeText'>{badgeText}</div> : null}
+      {badgeText ? (
+        <div style={{ fontWeight: "bold" }} className='badgeText'>
+          {badgeText}
+        </div>
+      ) : null}
       <img src={coverImg} alt='photo' />
       <div>
         <span style={{ color: "#FE395C" }}>★ </span> <span>{rating} </span>

@@ -6,16 +6,11 @@ import Card from "./card";
 import data from "./data";
 
 function CardContainer() {
-  const cards = data.map(({ id, title, price, stats, location, openSpots }) => (
+  const cards = data.map((json) => (
     <Card
+      key={json.id}
+      json={json}
       coverImg={pic}
-      key={id}
-      title={title}
-      price={price}
-      rating={stats.rating}
-      reviewCount={stats.reviewCount}
-      location={location}
-      openSpots={openSpots}
     />
   ));
   return <ul className='cardContainer'>{cards}</ul>;
