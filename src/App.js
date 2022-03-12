@@ -1,10 +1,12 @@
 /** @format */
 
-import Navbar from "./component/header";
+import Header from "./component/header";
+import Navbar from "./component/navbar";
 
 function App() {
   return (
     <div className='App'>
+      <Header />
       <Navbar />
     </div>
   );
