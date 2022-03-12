@@ -45,7 +45,7 @@
 }
 
 /** @format */
-.card {
+.cardContainer {
   width: 550px;
   height: fit-content;
   padding-top: 40px;
@@ -56,17 +56,17 @@
   grid-gap: 0 18px;
   overflow: hidden;
 }
-.card .card--row {
+.cardContainer .card {
   font-size: 11px;
   line-height: 20px;
   position: relative;
 }
-.card .card--row img {
+.cardContainer .card img {
   width: 100%;
   height: 225px;
   border-radius: 10px;
 }
-.card .card--row::before {
+.cardContainer .card::before {
   content: "SOLD OUT";
   position: absolute;
   top: 5px;

@@ -1,6 +1,6 @@
 /** @format */
 
-.card {
+.cardContainer {
   width: 550px;
   height: fit-content;
 
@@ -14,7 +14,7 @@
 
   overflow: hidden;
 
-  .card--row {
+  .card {
     font-size: 11px;
     line-height: 20px;
 

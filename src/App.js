@@ -2,14 +2,14 @@
 
 import Header from "./component/header";
 import Navbar from "./component/navbar";
-import Card from "./component/card";
+import CardContainer from "./component/cardContainer";
 
 function App() {
   return (
     <div className='App'>
       <Header />
       <Navbar />
-      <Card/>
+      <CardContainer />
     </div>
   );
 }
